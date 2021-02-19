@@ -1,0 +1,19 @@
+service:
+  label: "Standard-Api-Template"
+  name: "standard-api-template"
+  env: "LOCAL"
+
+db:
+  host: "localhost"
+  port: "5432"
+  username: "postgres"
+  password: "postgres"
+  database: "products"
+  sslmode: "disable"
+
+kafka:
+  servers: "localhost:9092"
+  auto_offset_reset: "smallest"
+
+producer:
+  pool_duration: 20000
